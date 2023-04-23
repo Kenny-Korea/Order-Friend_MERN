@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import { API_BASE_URL } from "../global/constants";
 
-type MethodType = "GET" | "POST" | "PATCH" | "DELETE";
+type APIMethodType = "GET" | "POST" | "PATCH" | "DELETE";
 
 const useFetch = () => {
   const [isLoading, setIsLoading] =
@@ -11,7 +11,7 @@ const useFetch = () => {
   const sendRequest = useCallback(
     async (
       url: string,
-      method: MethodType = "GET",
+      method: APIMethodType = "GET",
       headers = {},
       body: any
     ) => {

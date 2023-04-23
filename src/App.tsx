@@ -1,13 +1,26 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import "./styles.scss";
+import "./minireset.css";
+import Layout from "./components/layouts/layout";
+import { Route, Routes } from "react-router-dom";
+import Menu from "./pages/menu";
+import Sidebar from "./components/layouts/sidebar";
 
 function App() {
   return (
-    <>
-      <h1>hello world</h1>;
-    </>
+    <Layout>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Sidebar />
+              <Menu />
+            </>
+          }
+        />
+      </Routes>
+    </Layout>
   );
 }
 

@@ -1,0 +1,23 @@
+.Layout {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Navbar {
+  height: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.Content {
+  width: 100%;
+  height: calc(100% - 2rem);
+  background-color: beige;
+}
+
+.MenuCard {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
